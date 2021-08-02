@@ -1,0 +1,57 @@
+@import "base";
+
+.layout {
+  background-color: $title-background;
+}
+
+.header {
+  padding: 2.5em 0;
+  text-align: center;
+}
+
+.container {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: $main-background;
+}
+
+.tip-form {
+  padding: 2em;
+}
+
+.bill-container {
+  width: 100%;
+}
+
+.input-container {
+  margin-bottom: 1.5em;
+}
+
+.input-label {
+  color: $label-color;
+  font-weight: 600;
+}
+
+.input-border {
+  display: flex;
+  background-color: $input-color;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.svg-icon {
+  align-self: center;
+}
+
+.bill-input {
+  background-color: $input-color;
+  margin-left: auto;
+  border: 0px;
+  margin-left: 1em;
+  width: 100%;
+  /* Text style */
+  color: $default-btn;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+}

@@ -1,0 +1,78 @@
+/* Variables */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+.layout {
+  max-width: 375px;
+}
+
+.layout {
+  background-color: #c5e4e7;
+}
+
+.header {
+  padding: 2.5em 0;
+  text-align: center;
+}
+
+.container {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+}
+
+.tip-form {
+  padding: 2em;
+}
+
+.bill-container {
+  width: 100%;
+}
+
+.input-container {
+  margin-bottom: 1.5em;
+}
+
+.input-label {
+  color: #5e7a7d;
+  font-weight: 600;
+}
+
+.input-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e4ecec;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+.svg-icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bill-input {
+  background-color: #e4ecec;
+  margin-left: auto;
+  border: 0px;
+  margin-left: 1em;
+  width: 100%;
+  /* Text style */
+  color: #00494d;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=styles.css.map */
