@@ -38,7 +38,7 @@
 .input-border {
   display: flex;
   background-color: base.$input-color;
-  padding: 0.5em;
+  padding: 0.5em 0.7em;
   margin-top: 0.5em;
 }
 
@@ -46,7 +46,7 @@
   align-self: center;
 }
 
-.bill-input {
+.form-input {
   background-color: base.$input-color;
   border: 0px;
   margin-left: 0.5em;
@@ -87,4 +87,47 @@
 [name="tip-amount"] {
   position: fixed;
   opacity: 0;
+}
+
+.result-container {
+  border-radius: 10px;
+  padding: 1.5em 1em 1em;
+  background-color: base.$default-btn;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+.amount-label {
+  color: white;
+  font-weight: 900;
+}
+
+.person-label {
+  color: base.$input-border;
+  font-weight: 400;
+}
+
+.total-label {
+  color: base.$active-btn;
+  font-size: 25px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  background-color: base.$active-btn;
+  border-radius: 8px;
+  border: none;
+
+  color: base.$default-btn;
+  font-size: 24px;
+  font-weight: 600;
 }

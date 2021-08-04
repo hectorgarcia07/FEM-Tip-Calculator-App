@@ -26,7 +26,7 @@
           <label for="bill" class="input-label">Bill</label>
           <div class="input-border">
             <img src="./images/icon-dollar.svg" alt="" class="svg-icon">
-            <input type="text" name="" id="bill" class="bill-input">
+            <input type="text" name="" id="bill" class="form-input">
           </div>
         </div>
         <!-- Select Tip Container -->
@@ -50,9 +50,31 @@
           
           <input id="custom-percent" name="tip-amount" type="radio" class="radio-input">
           <label for="custom-percent" class="radio-choice">Custom</label>
-          
         </fieldset>
-        
+        <!-- Number of people input -->
+        <div class="bill-container input-container">
+          <label for="num-people" class="input-label">Number of People</label>
+          <div class="input-border">
+            <img src="./images/icon-person.svg" alt="" class="svg-icon">
+            <input type="text" name="" id="num-people" class="form-input">
+          </div>
+        </div>
+        <!-- Result Amount -->
+        <div class="input-container result-container">
+          <div class="total-container">
+            <div class="amount-label">Tip Amount <br>
+              <span class="person-label">/ person</span>
+            </div>
+            <div class="total-label">$4.27</div>
+          </div>
+          <div class="total-container">
+            <div class="amount-label">Total <br>
+              <span class="person-label">/ person</span>
+            </div>
+            <div class="total-label">$32.79</div>
+          </div>
+          <button class="submit-btn">RESET</button>
+        </div>
       </form>
     </main>
   </div>
