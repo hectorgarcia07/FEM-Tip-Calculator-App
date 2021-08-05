@@ -55,6 +55,13 @@ body {
   background-color: #e4ecec;
   padding: 0.5em 0.7em;
   margin-top: 0.5em;
+  border: 2px solid #e4ecec;
+}
+
+.input-border:hover,
+.input-border:focus-within {
+  border: 2px solid #26c0ab;
+  cursor: pointer;
 }
 
 .svg-icon {
@@ -93,14 +100,20 @@ body {
 }
 
 /* Changes checked color and background */
-[name=tip-amount]:checked + label {
+.radio-input:checked + label {
   background-color: #26c0ab;
   color: #00494d;
 }
 
-[name=tip-amount] {
+.radio-input {
   position: fixed;
   opacity: 0;
+}
+
+.radio-choice:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+  cursor: pointer;
 }
 
 .result-container {
@@ -143,4 +156,10 @@ body {
   color: #00494d;
   font-size: 24px;
   font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

@@ -40,6 +40,13 @@
   background-color: base.$input-color;
   padding: 0.5em 0.7em;
   margin-top: 0.5em;
+  border: 2px solid base.$input-color;
+}
+
+.input-border:hover,
+.input-border:focus-within {
+  border: 2px solid base.$active-btn;
+  cursor: pointer;
 }
 
 .svg-icon {
@@ -79,14 +86,20 @@
 }
 
 /* Changes checked color and background */
-[name="tip-amount"]:checked + label {
+.radio-input:checked + label {
   background-color: base.$active-btn;
   color: base.$default-btn;
 }
 
-[name="tip-amount"] {
+.radio-input {
   position: fixed;
   opacity: 0;
+}
+
+.radio-choice:hover {
+  background-color: base.$title-background;
+  color: base.$default-btn;
+  cursor: pointer;
 }
 
 .result-container {
@@ -130,4 +143,10 @@
   color: base.$default-btn;
   font-size: 24px;
   font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: base.$title-background;
+  color: base.$default-btn;
+  cursor: pointer;
 }
