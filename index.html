@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./scss/styles.css">
 
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -26,7 +26,7 @@
           <label for="bill" class="input-label">Bill
             <div class="input-border">
               <img src="./images/icon-dollar.svg" alt="" class="svg-icon">
-              <input type="text" name="" id="bill" class="form-input">
+              <input type="text" name="" id="bill" class="form-input" placeholder="0">
             </div>
           </label>
         </div>
@@ -34,30 +34,30 @@
         <fieldset class="input-container fieldset-container">
           <legend class="input-label">Select Tip %</legend>
 
-          <input id="five-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="five-percent" class="radio-choice">5%</label>
+          <input id="five-percent" name="tip-amount" type="radio" class="radio-input ">
+          <label for="five-percent" class="radio-choice btn-hover">5%</label>
           
           <input id="ten-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="ten-percent" class="radio-choice">10%</label>
+          <label for="ten-percent" class="radio-choice btn-hover">10%</label>
     
           <input id="fifteen-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="fifteen-percent" class="radio-choice">15%</label>
+          <label for="fifteen-percent" class="radio-choice btn-hover">15%</label>
     
           <input id="twentyfive-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="twentyfive-percent" class="radio-choice">25%</label>
+          <label for="twentyfive-percent" class="radio-choice btn-hover">25%</label>
     
           <input id="fifty-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="fifty-percent" class="radio-choice">50%</label>
+          <label for="fifty-percent" class="radio-choice btn-hover">50%</label>
           
           <input id="custom-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="custom-percent" class="radio-choice">Custom</label>
+          <label for="custom-percent" class="radio-choice btn-hover">Custom</label>
         </fieldset>
         <!-- Number of people input -->
         <div class="bill-container input-container">
           <label for="num-people" class="input-label">Number of People
             <div class="input-border">
               <img src="./images/icon-person.svg" alt="" class="svg-icon">
-              <input type="text" name="" id="num-people" class="form-input">
+              <input type="number" name="num-people" id="num-people" class="form-input" placeholder="0">
             </div>
           </label>
         </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="total-label">$32.79</div>
           </div>
-          <button class="submit-btn">RESET</button>
+          <button class="submit-btn btn-hover">RESET</button>
         </div>
       </form>
     </main>
@@ -92,7 +92,8 @@
 
   Reset -->
   
-  
+  <script src="./script.js"></script>
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

@@ -9,19 +9,3 @@ $input-color: hsl(180, 17%, 91%);
 
 $title-background: hsl(185, 41%, 84%);
 $main-background: hsl(0, 0%, 100%);
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Space Mono", monospace;
-}
-
-.layout {
-  max-width: 375px;
-}

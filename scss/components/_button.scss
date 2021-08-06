@@ -1,0 +1,49 @@
+@use "../main" as base;
+
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  background-color: base.$active-btn;
+  border-radius: 8px;
+  border: none;
+
+  color: base.$default-btn;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Hover effect */
+
+.btn-hover:hover {
+  background-color: base.$title-background;
+  color: base.$default-btn;
+  cursor: pointer;
+}
+
+/* Radio Buttons */
+
+.radio-choice {
+  border-radius: 10px;
+  background-color: base.$default-btn;
+
+  margin-bottom: 0.5em;
+  padding: 0.3em 0;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Changes checked color and background */
+.radio-input:checked + label {
+  background-color: base.$active-btn;
+  color: base.$default-btn;
+}
+
+.radio-input {
+  position: fixed;
+  opacity: 0;
+}

@@ -1,0 +1,41 @@
+@use "../main" as base;
+
+.input-container {
+  margin-bottom: 1.5em;
+}
+
+.input-label {
+  color: base.$label-color;
+  font-weight: 600;
+}
+
+.input-border {
+  display: flex;
+  background-color: base.$input-color;
+  padding: 0.5em 0.7em;
+  margin-top: 0.5em;
+  border: 2px solid base.$input-color;
+}
+
+.input-border:hover,
+.input-border:focus-within {
+  border: 2px solid base.$active-btn;
+  cursor: pointer;
+}
+
+/* Style for the SVG Icon */
+
+.svg-icon {
+  align-self: center;
+}
+
+/* Disabled Spinner for the number input */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

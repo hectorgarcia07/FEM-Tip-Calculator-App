@@ -1,0 +1,95 @@
+@use "main" as base;
+@use "components/button";
+@use "components/input";
+
+/* Layout */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+.layout {
+  max-width: 375px;
+  background-color: base.$title-background;
+}
+
+.header {
+  padding: 2.5em 0;
+  text-align: center;
+}
+
+.container {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: base.$main-background;
+}
+
+.tip-form {
+  padding: 2em 0;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.form-input {
+  background-color: base.$input-color;
+  border: 0px;
+  margin-left: 0.5em;
+  width: 100%;
+  /* Text style */
+  color: base.$default-btn;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-border:focus-within .form-input:invalid {
+  border: 2px solid red;
+}
+
+.fieldset-container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 48%);
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+}
+
+.result-container {
+  border-radius: 10px;
+  padding: 1.5em 1em 1em;
+  background-color: base.$default-btn;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+/* Label styles */
+
+.amount-label {
+  color: white;
+  font-weight: 900;
+}
+
+.person-label {
+  color: base.$input-border;
+  font-weight: 400;
+}
+
+.total-label {
+  color: base.$active-btn;
+  font-size: 25px;
+  font-weight: 700;
+  align-self: center;
+}
