@@ -43,7 +43,7 @@
 }
 
 .input-container {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .input-label {
@@ -52,22 +52,23 @@
 }
 
 .input-border {
-  display: flex;
-  background-color: #e4ecec;
+  /* background-color: base.$input-color;
   padding: 0.5em 0.7em;
   margin-top: 0.5em;
-  border: 2px solid #e4ecec;
-}
-
-.input-border:hover,
-.input-border:focus-within {
-  border: 2px solid #26c0ab;
-  cursor: pointer;
+  border: 2px solid base.$input-color; */
+  position: relative;
 }
 
 /* Style for the SVG Icon */
 .svg-icon {
   align-self: center;
+  position: absolute;
+  padding-left: 0.5em;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Disabled Spinner for the number input */
@@ -119,17 +120,13 @@ body {
 .form-input {
   background-color: #e4ecec;
   border: 0px;
-  margin-left: 0.5em;
   width: 100%;
+  padding: 0.3em 0.5em 0.3em 1.5em;
   /* Text style */
   color: #00494d;
   text-align: right;
   font-size: 24px;
   font-weight: 600;
-}
-
-.input-border:focus-within .form-input:invalid {
-  border: 2px solid red;
 }
 
 .fieldset-container {

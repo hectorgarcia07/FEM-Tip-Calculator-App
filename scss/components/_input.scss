@@ -1,7 +1,7 @@
 @use "../main" as base;
 
 .input-container {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .input-label {
@@ -10,23 +10,24 @@
 }
 
 .input-border {
-  display: flex;
-  background-color: base.$input-color;
+  /* background-color: base.$input-color;
   padding: 0.5em 0.7em;
   margin-top: 0.5em;
-  border: 2px solid base.$input-color;
-}
-
-.input-border:hover,
-.input-border:focus-within {
-  border: 2px solid base.$active-btn;
-  cursor: pointer;
+  border: 2px solid base.$input-color; */
+  position: relative;
 }
 
 /* Style for the SVG Icon */
 
 .svg-icon {
   align-self: center;
+  position: absolute;
+  padding-left: 0.5em;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Disabled Spinner for the number input */

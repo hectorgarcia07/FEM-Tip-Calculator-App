@@ -41,17 +41,13 @@ body {
 .form-input {
   background-color: base.$input-color;
   border: 0px;
-  margin-left: 0.5em;
   width: 100%;
+  padding: 0.3em 0.5em 0.3em 1.5em;
   /* Text style */
   color: base.$default-btn;
   text-align: right;
   font-size: 24px;
   font-weight: 600;
-}
-
-.input-border:focus-within .form-input:invalid {
-  border: 2px solid red;
 }
 
 .fieldset-container {
