@@ -4,19 +4,27 @@
   display: block;
   width: 100%;
   padding: 0.3em 0;
-  background-color: #26c0ab;
   border-radius: 8px;
   border: none;
-  color: #00494d;
   font-size: 24px;
   font-weight: 600;
+  color: #00494d;
 }
 
-/* Hover effect */
-.btn-hover:hover {
+.submit-active {
+  background-color: #26c0ab;
+}
+.submit-active:hover {
   background-color: #c5e4e7;
   color: #00494d;
   cursor: pointer;
+}
+
+button[id=submit-btn]:disabled {
+  background-color: #5e7a7d;
+}
+button[id=submit-btn]:disabled:hover {
+  cursor: default;
 }
 
 /* Radio Buttons */
@@ -30,16 +38,42 @@
   font-weight: 600;
   color: white;
 }
+.radio-choice:hover {
+  background-color: #c5e4e7;
+  color: #00494d;
+  cursor: pointer;
+}
 
 /* Changes checked color and background */
-.radio-input:checked + label {
+.radio-input:checked + .radio-choice {
   background-color: #26c0ab;
   color: #00494d;
+}
+
+.radio-input:checked + label > input {
+  color: red;
 }
 
 .radio-input {
   position: fixed;
   opacity: 0;
+}
+
+.custom-percent {
+  display: block;
+  background-color: #e4ecec;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.4em 0;
+  text-align: right;
+}
+.custom-percent:required:invalid {
+  border-color: #e4ecec;
+}
+.custom-percent:hover, .custom-percent:focus, .custom-percent:required:hover:invalid {
+  border-color: #26c0ab;
+  cursor: pointer;
 }
 
 .input-container {
@@ -49,13 +83,11 @@
 .input-label {
   color: #5e7a7d;
   font-weight: 600;
+  display: block;
+  padding-bottom: 0.5em;
 }
 
 .input-border {
-  /* background-color: base.$input-color;
-  padding: 0.5em 0.7em;
-  margin-top: 0.5em;
-  border: 2px solid base.$input-color; */
   position: relative;
 }
 
@@ -119,7 +151,7 @@ body {
 
 .form-input {
   background-color: #e4ecec;
-  border: 0px;
+  border: 2px solid #e4ecec;
   width: 100%;
   padding: 0.3em 0.5em 0.3em 1.5em;
   /* Text style */
@@ -127,6 +159,13 @@ body {
   text-align: right;
   font-size: 24px;
   font-weight: 600;
+}
+.form-input:required:invalid {
+  border-color: #e4ecec;
+}
+.form-input:hover, .form-input:focus, .form-input:required:hover:invalid {
+  border-color: #26c0ab;
+  cursor: pointer;
 }
 
 .fieldset-container {

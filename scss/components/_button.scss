@@ -1,29 +1,38 @@
 @use "../main" as base;
 
-/* Submit button */
-.submit-btn {
-  display: block;
-  width: 100%;
-  padding: 0.3em 0;
-  background-color: base.$active-btn;
-  border-radius: 8px;
-  border: none;
-
-  color: base.$default-btn;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-/* Hover effect */
-
-.btn-hover:hover {
+@mixin hover-btn {
   background-color: base.$title-background;
   color: base.$default-btn;
   cursor: pointer;
 }
 
-/* Radio Buttons */
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: base.$default-btn;
+}
 
+.submit-active {
+  background-color: base.$active-btn;
+  &:hover {
+    @include hover-btn();
+  }
+}
+
+button[id="submit-btn"]:disabled {
+  background-color: base.$label-color;
+  &:hover {
+    cursor: default;
+  }
+}
+
+/* Radio Buttons */
 .radio-choice {
   border-radius: 10px;
   background-color: base.$default-btn;
@@ -35,15 +44,44 @@
   font-size: 24px;
   font-weight: 600;
   color: white;
+
+  &:hover {
+    @include hover-btn();
+  }
 }
 
 /* Changes checked color and background */
-.radio-input:checked + label {
+.radio-input:checked + .radio-choice {
   background-color: base.$active-btn;
   color: base.$default-btn;
+}
+
+.radio-input:checked + label > input {
+  color: red;
 }
 
 .radio-input {
   position: fixed;
   opacity: 0;
+}
+
+.custom-percent {
+  display: block;
+  background-color: base.$input-color;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0.4em 0;
+  text-align: right;
+
+  &:required:invalid {
+    border-color: base.$input-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:required:hover:invalid {
+    border-color: base.$active-btn;
+    cursor: pointer;
+  }
 }

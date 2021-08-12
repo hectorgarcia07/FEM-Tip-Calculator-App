@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./scss/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -23,44 +23,47 @@
       <form class="tip-form" id="tip-form">
         <!-- Bill Input Container -->
         <div class="input-container">
-          <label for="bill" class="input-label">Bill
-            <div class="input-border">
-              <img src="./images/icon-dollar.svg" alt="" class="svg-icon">
-              <input type="text" name="" id="bill" class="form-input" placeholder="0">
-            </div>
-          </label>
+          <label for="bill" class="input-label">Bill</label>
+          <div class="input-border">
+            <img src="./images/icon-dollar.svg" alt="" class="svg-icon">
+            <input type="text" name="bill" id="bill" class="form-input" placeholder="0" 
+              title="Enter total currency" required>
+          </div>
         </div>
         <!-- Select Tip Container -->
         <fieldset class="input-container fieldset-container">
           <legend class="input-label">Select Tip %</legend>
 
-          <input id="five-percent" name="tip-amount" type="radio" class="radio-input ">
-          <label for="five-percent" class="radio-choice btn-hover">5%</label>
+          <input id="5" name="tip-amount" type="radio" class="radio-input" required>
+          <label for="5" class="radio-choice ">5%</label>
           
-          <input id="ten-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="ten-percent" class="radio-choice btn-hover">10%</label>
+          <input id="10" name="tip-amount" type="radio" class="radio-input">
+          <label for="10" class="radio-choice ">10%</label>
     
-          <input id="fifteen-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="fifteen-percent" class="radio-choice btn-hover">15%</label>
+          <input id="15" name="tip-amount" type="radio" class="radio-input">
+          <label for="15" class="radio-choice ">15%</label>
     
-          <input id="twentyfive-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="twentyfive-percent" class="radio-choice btn-hover">25%</label>
+          <input id="25" name="tip-amount" type="radio" class="radio-input">
+          <label for="25" class="radio-choice ">25%</label>
     
-          <input id="fifty-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="fifty-percent" class="radio-choice btn-hover">50%</label>
+          <input id="30" name="tip-amount" type="radio" class="radio-input">
+          <label for="30" class="radio-choice ">50%</label>
           
-          <input id="custom-percent" name="tip-amount" type="radio" class="radio-input">
-          <label for="custom-percent" class="radio-choice btn-hover">Custom</label>
+          <input id="custom" name="tip-amount" type="radio" class="radio-input">
+          <label for="custom" class="">
+            <input class="custom-percent" type="text" name="tip-amount"
+             id="custom-percent"  placeholder="Custom">
+          </label>
         </fieldset>
         <!-- Number of people input -->
-        <!-- <div class="bill-container input-container">
-          <label for="num-people" class="input-label">Number of People
-            <div class="input-border">
-              <img src="./images/icon-person.svg" alt="" class="svg-icon">
-              <input type="number" name="num-people" id="num-people" class="form-input" placeholder="0">
-            </div>
-          </label>
-        </div> -->
+        <div class="bill-container input-container">
+          <label for="num-people" class="input-label">Number of People</label>
+          <div class="input-border">
+            <img src="./images/icon-person.svg" alt="" class="svg-icon">
+            <input type="number" name="num-people" id="num-people" class="form-input" 
+            placeholder="0" title="Enter a positive number." required>
+          </div>
+        </div>
         <!-- Result Amount -->
         <div class="input-container result-container">
           <div class="total-container">
@@ -75,22 +78,13 @@
             </div>
             <div class="total-label">$32.79</div>
           </div>
-          <button class="submit-btn btn-hover">RESET</button>
+          <!--  -->
+          <button id="submit-btn" class="submit-btn submit-active" 
+          title="Please fill out all fields before submiting." disabled>RESET</button>
         </div>
       </form>
     </main>
   </div>
-
-  <!-- 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
   
   <script src="./script.js"></script>
 
