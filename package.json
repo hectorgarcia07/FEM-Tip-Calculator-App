@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "moneysafe": "^2.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "name": "tip-calculator-app-main",
+  "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "dev": "nodemon src/app.js -e js,css,html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorgarcia07/FEM-Tip-Calculator-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectorgarcia07/FEM-Tip-Calculator-App/issues"
+  },
+  "homepage": "https://github.com/hectorgarcia07/FEM-Tip-Calculator-App#readme"
+}

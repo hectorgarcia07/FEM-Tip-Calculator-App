@@ -17,12 +17,12 @@ body {
 }
 
 .layout {
-  max-width: 375px;
+  max-width: 381px;
   background-color: base.$title-background;
 }
 
 .header {
-  padding: 2.5em 0;
+  padding: 3.5em 0 2.2em 0;
   text-align: center;
 }
 
@@ -33,8 +33,8 @@ body {
 }
 
 .tip-form {
-  padding: 2em 0;
-  width: 85%;
+  padding-top: 2em;
+  width: 84%;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ body {
   background-color: base.$input-color;
   border: 2px solid base.$input-color;
   width: 100%;
-  padding: 0.3em 0.5em 0.3em 1.5em;
+  padding: 0.35em 0.6em 0.3em 1.5em;
   /* Text style */
   color: base.$default-btn;
   text-align: right;
@@ -51,6 +51,7 @@ body {
 
   &:required:invalid {
     border-color: base.$input-color;
+    color: red;
   }
 
   &:hover,
@@ -62,16 +63,20 @@ body {
 }
 
 .fieldset-container {
+  border: none;
+  padding: 0;
+}
+
+.radio-container {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 48%);
   justify-content: space-between;
-  padding: 0;
-  border: none;
+  padding-top: 0.3em;
 }
 
 .result-container {
   border-radius: 10px;
-  padding: 1.5em 1em 1em;
+  padding: 3.3em 2em 2em 2em;
   background-color: base.$default-btn;
 }
 
@@ -79,7 +84,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 /* Label styles */
@@ -96,7 +101,7 @@ body {
 
 .total-label {
   color: base.$active-btn;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 700;
   align-self: center;
 }

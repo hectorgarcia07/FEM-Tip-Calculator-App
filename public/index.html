@@ -23,45 +23,51 @@
       <form class="tip-form" id="tip-form">
         <!-- Bill Input Container -->
         <div class="input-container">
-          <label for="bill" class="input-label">Bill</label>
+          <div class="label-and-error">
+            <label for="bill" class="input-label">Bill</label>
+            <span class="error-msg" id="bill-error-msg"></span>
+          </div>
           <div class="input-border">
             <img src="./images/icon-dollar.svg" alt="" class="svg-icon">
             <input type="text" name="bill" id="bill" class="form-input" placeholder="0" 
-              title="Enter total currency" required>
+              title="Enter total currency">
           </div>
         </div>
         <!-- Select Tip Container -->
         <fieldset class="input-container fieldset-container">
-          <legend class="input-label">Select Tip %</legend>
-
-          <input id="5" name="tip-amount" type="radio" class="radio-input" required>
-          <label for="5" class="radio-choice ">5%</label>
-          
-          <input id="10" name="tip-amount" type="radio" class="radio-input">
-          <label for="10" class="radio-choice ">10%</label>
-    
-          <input id="15" name="tip-amount" type="radio" class="radio-input">
-          <label for="15" class="radio-choice ">15%</label>
-    
-          <input id="25" name="tip-amount" type="radio" class="radio-input">
-          <label for="25" class="radio-choice ">25%</label>
-    
-          <input id="30" name="tip-amount" type="radio" class="radio-input">
-          <label for="30" class="radio-choice ">50%</label>
-          
-          <input id="custom" name="tip-amount" type="radio" class="radio-input">
-          <label for="custom" class="">
-            <input class="custom-percent" type="text" name="tip-amount"
-             id="custom-percent"  placeholder="Custom">
-          </label>
+          <div class="label-and-error">
+            <legend class="input-label">Select Tip %</legend>
+            <span class="error-msg" id="tip-error-msg"></span>
+          </div>
+          <div class="radio-container">
+            <input id="5" name="tip-amount" type="radio" class="radio-input">
+            <label for="5" class="radio-choice ">5%</label>
+            <input id="10" name="tip-amount" type="radio" class="radio-input">
+            <label for="10" class="radio-choice ">10%</label>
+            <input id="15" name="tip-amount" type="radio" class="radio-input">
+            <label for="15" class="radio-choice ">15%</label>
+            <input id="25" name="tip-amount" type="radio" class="radio-input">
+            <label for="25" class="radio-choice ">25%</label>
+            <input id="30" name="tip-amount" type="radio" class="radio-input">
+            <label for="30" class="radio-choice ">50%</label>
+            
+            <input id="custom" name="tip-amount" type="radio" class="radio-input">
+            <label for="custom" class="">
+              <input class="custom-percent" type="text" name="tip-amount"
+               id="custom-percent"  placeholder="Custom">
+            </label>
+          </div>
         </fieldset>
         <!-- Number of people input -->
         <div class="bill-container input-container">
-          <label for="num-people" class="input-label">Number of People</label>
+          <div class="label-and-error">
+            <label for="num-people" class="input-label">Number of People</label>
+            <span class="error-msg" id="people-error-msg"></span>
+          </div>
           <div class="input-border">
             <img src="./images/icon-person.svg" alt="" class="svg-icon">
-            <input type="number" name="num-people" id="num-people" class="form-input" 
-            placeholder="0" title="Enter a positive number." required>
+            <input type="number"  name="num-people" id="num-people" class="form-input" 
+            placeholder="0" title="Enter a positive number.">
           </div>
         </div>
         <!-- Result Amount -->
@@ -70,23 +76,23 @@
             <div class="amount-label">Tip Amount <br>
               <span class="person-label">/ person</span>
             </div>
-            <div class="total-label">$4.27</div>
+            <div class="total-label" id="tip-per-person">$0.00</div>
           </div>
           <div class="total-container">
             <div class="amount-label">Total <br>
               <span class="person-label">/ person</span>
             </div>
-            <div class="total-label">$32.79</div>
+            <div class="total-label" id="total-per-person">$0.00</div>
           </div>
           <!--  -->
-          <button id="submit-btn" class="submit-btn submit-active" 
+          <button type="reset" id="submit-btn" class="submit-btn submit-active" 
           title="Please fill out all fields before submiting." disabled>RESET</button>
         </div>
       </form>
     </main>
   </div>
   
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
