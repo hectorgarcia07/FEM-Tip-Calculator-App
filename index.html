@@ -6,10 +6,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js" type="module"></script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/styles.css">
-
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/public/css/styles.css">
+  
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -17,7 +18,7 @@
 <body>
   <div class="layout">
     <section class="header">
-      <img src="./images/logo.svg" alt="" srcset="">
+      <img src="/public/images/logo.svg" alt="" srcset="">
     </section>
     <main class="container">
       <form class="tip-form" id="tip-form">
@@ -28,9 +29,9 @@
             <span class="error-msg" id="bill-error-msg"></span>
           </div>
           <div class="input-border">
-            <img src="./images/icon-dollar.svg" alt="" class="svg-icon">
+            <img src="/public/images/icon-dollar.svg" alt="" class="svg-icon">
             <input type="text" name="bill" id="bill" class="form-input" placeholder="0" 
-              title="Enter total currency">
+              title="Enter total currency" pattern="^\d+$|^\d+(?:\.\d{2})$">
           </div>
         </div>
         <!-- Select Tip Container -->
@@ -53,8 +54,8 @@
             
             <input id="custom" name="tip-amount" type="radio" class="radio-input">
             <label for="custom" class="">
-              <input class="custom-percent" type="text" name="tip-amount"
-               id="custom-percent"  placeholder="Custom">
+              <input class="form-input custom-percent" type="text" name="tip-amount"
+               id="custom-percent"  placeholder="Custom" pattern="^[1-9]\d*$">
             </label>
           </div>
         </fieldset>
@@ -65,9 +66,9 @@
             <span class="error-msg" id="people-error-msg"></span>
           </div>
           <div class="input-border">
-            <img src="./images/icon-person.svg" alt="" class="svg-icon">
-            <input type="number"  name="num-people" id="num-people" class="form-input" 
-            placeholder="0" title="Enter a positive number.">
+            <img src="/public/images/icon-person.svg" alt="" class="svg-icon">
+            <input type="text" name="num-people" id="num-people" class="form-input" 
+            placeholder="0" title="Enter a positive number." pattern="^[1-9]\d*$">
           </div>
         </div>
         <!-- Result Amount -->
@@ -92,7 +93,8 @@
     </main>
   </div>
   
-  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
+  <script src="/public/js/script.js"></script>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

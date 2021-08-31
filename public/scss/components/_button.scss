@@ -62,26 +62,3 @@ button[id="submit-btn"]:disabled {
   position: fixed;
   opacity: 0;
 }
-
-.custom-percent {
-  display: block;
-  background-color: base.$input-color;
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0.4em 0.4em;
-  text-align: right;
-  border: 2px solid base.$input-color;
-  border-radius: 10px;
-  color: base.$default-btn;
-
-  /* &:required:invalid {
-    border-color: base.$input-color;
-  } */
-
-  &:hover,
-  &:focus {
-    border-color: base.$active-btn;
-    cursor: pointer;
-  }
-}

@@ -1,54 +1,222 @@
-/*
-Error: Invalid CSS after "...und-color: base": expected ";", was ".$title-backgro..."
-        on line 21 of ./public/scss/styles.scss
+/* Variables */
+/* Submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.6em 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 21px;
+  font-weight: 600;
+  color: #00494d;
+}
 
-16:   font-family: "Space Mono", monospace;
-17: }
-18: 
-19: .layout {
-20:   max-width: 381px;
-21:   background-color: base.$title-background;
-22: }
-23: 
-24: .header {
-25:   padding: 3.5em 0 2.2em 0;
-26:   text-align: center;
+.submit-active {
+  background-color: #26c0ab;
+}
+.submit-active:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
 
-Backtrace:
-./public/scss/styles.scss:21
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/home/hector/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/home/hector/.rbenv/versions/2.5.1/bin/sass:23:in `load'
-/home/hector/.rbenv/versions/2.5.1/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...und-color: base\": expected \";\", was \".$title-backgro...\"\A         on line 21 of ./public/scss/styles.scss\A \A 16:   font-family: \"Space Mono\", monospace;\A 17: }\A 18: \A 19: .layout {\A 20:   max-width: 381px;\A 21:   background-color: base.$title-background;\A 22: }\A 23: \A 24: .header {\A 25:   padding: 3.5em 0 2.2em 0;\A 26:   text-align: center;"; }
+button[id=submit-btn]:disabled {
+  background-color: #5e7a7d;
+}
+button[id=submit-btn]:disabled:hover {
+  cursor: default;
+}
+
+/* Radio Buttons */
+.radio-choice {
+  border-radius: 7px;
+  background-color: #00494d;
+  margin-bottom: 0.65em;
+  padding: 0.26em 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+.radio-choice:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+
+/* Changes checked color and background */
+.radio-input:checked + .radio-choice {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.radio-input:checked + label > input {
+  color: red;
+}
+
+.radio-input {
+  position: fixed;
+  opacity: 0;
+}
+
+.input-container {
+  margin-bottom: 1.2em;
+}
+
+.input-label {
+  color: #5e7a7d;
+  justify-content: flex-start;
+}
+
+.error-msg {
+  justify-content: flex-end;
+  margin-left: auto;
+  color: red;
+  font-size: 13px;
+}
+
+.label-and-error {
+  padding: 0.2em 0 0.3em 0;
+  font-weight: 600;
+  display: flex;
+}
+
+.error-border {
+  border-color: #f4fafa;
+}
+
+.input-border {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+/* Style for the SVG Icon */
+.svg-icon {
+  align-self: center;
+  position: absolute;
+  padding-left: 1.2em;
+  margin: auto 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Disabled Spinner for the number input */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+.layout {
+  max-width: 381px;
+  background-color: #c5e4e7;
+}
+
+.header {
+  padding: 3.5em 0 2.2em 0;
+  text-align: center;
+}
+
+.container {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: white;
+}
+
+.tip-form {
+  padding-top: 2em;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.form-input {
+  background-color: #f4fafa;
+  border: 2px solid #f4fafa;
+  width: 100%;
+  padding: 0.35em 0.6em 0.3em 1.5em;
+  /* Text style */
+  color: #00494d;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+}
+.form-input:invalid {
+  border-color: red;
+}
+.form-input:invalid:hover, .form-input:invalid:focus {
+  border-color: red;
+  color: red;
+}
+.form-input:hover, .form-input:focus {
+  border-color: #26c0ab;
+  cursor: pointer;
+}
+
+.custom-percent {
+  display: block;
+  border-radius: 10px;
+  padding: 0.4em 0.4em;
+  border-radius: 10px;
+}
+
+.fieldset-container {
+  border: none;
+  padding: 0;
+}
+
+.radio-container {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(2, 48%);
+  justify-content: space-between;
+  padding-top: 0.3em;
+}
+
+.result-container {
+  border-radius: 10px;
+  padding: 3.3em 2em 2em 2em;
+  background-color: #00494d;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 1.5em;
+}
+
+/* Label styles */
+.amount-label {
+  color: white;
+  font-weight: 900;
+}
+
+.person-label {
+  color: #7f9c9f;
+  font-weight: 400;
+}
+
+.total-label {
+  color: #26c0ab;
+  font-size: 32px;
+  font-weight: 700;
+  align-self: center;
+}/*# sourceMappingURL=styles.css.map */

@@ -49,17 +49,29 @@ body {
   font-size: 24px;
   font-weight: 600;
 
-  &:required:invalid {
-    border-color: base.$input-color;
-    color: red;
+  &:invalid {
+    border-color: red;
+
+    &:hover,
+    &:focus {
+      border-color: red;
+      color: red;
+    }
   }
 
   &:hover,
-  &:focus,
-  &:required:hover:invalid {
+  &:focus {
     border-color: base.$active-btn;
     cursor: pointer;
   }
+}
+
+.custom-percent {
+  display: block;
+  border-radius: 10px;
+
+  padding: 0.4em 0.4em;
+  border-radius: 10px;
 }
 
 .fieldset-container {
