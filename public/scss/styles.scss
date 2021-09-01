@@ -1,6 +1,10 @@
 @use "main" as base;
+@use "components/form";
+@use "components/container";
 @use "components/button";
 @use "components/input";
+@use "components/lables";
+@use "components/responsive";
 
 /* Layout */
 
@@ -14,106 +18,5 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Space Mono", monospace;
-}
-
-.layout {
-  max-width: 381px;
   background-color: base.$title-background;
-}
-
-.header {
-  padding: 3.5em 0 2.2em 0;
-  text-align: center;
-}
-
-.container {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-color: base.$main-background;
-}
-
-.tip-form {
-  padding-top: 2em;
-  width: 84%;
-  margin: 0 auto;
-}
-
-.form-input {
-  background-color: base.$input-color;
-  border: 2px solid base.$input-color;
-  width: 100%;
-  padding: 0.35em 0.6em 0.3em 1.5em;
-  /* Text style */
-  color: base.$default-btn;
-  text-align: right;
-  font-size: 24px;
-  font-weight: 600;
-
-  &:invalid {
-    border-color: red;
-
-    &:hover,
-    &:focus {
-      border-color: red;
-      color: red;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    border-color: base.$active-btn;
-    cursor: pointer;
-  }
-}
-
-.custom-percent {
-  display: block;
-  border-radius: 10px;
-
-  padding: 0.4em 0.4em;
-  border-radius: 10px;
-}
-
-.fieldset-container {
-  border: none;
-  padding: 0;
-}
-
-.radio-container {
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 48%);
-  justify-content: space-between;
-  padding-top: 0.3em;
-}
-
-.result-container {
-  border-radius: 10px;
-  padding: 3.3em 2em 2em 2em;
-  background-color: base.$default-btn;
-}
-
-.total-container {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin-bottom: 1.5em;
-}
-
-/* Label styles */
-
-.amount-label {
-  color: white;
-  font-weight: 900;
-}
-
-.person-label {
-  color: base.$input-border;
-  font-weight: 400;
-}
-
-.total-label {
-  color: base.$active-btn;
-  font-size: 32px;
-  font-weight: 700;
-  align-self: center;
 }

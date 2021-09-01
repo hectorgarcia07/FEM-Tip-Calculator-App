@@ -1,0 +1,20 @@
+@use "../main" as base;
+
+/* Label styles */
+
+.amount-label {
+  color: white;
+  font-weight: 900;
+}
+
+.person-label {
+  color: base.$input-border;
+  font-weight: 400;
+}
+
+.total-label {
+  color: base.$active-btn;
+  font-size: 32px;
+  font-weight: 700;
+  align-self: center;
+}

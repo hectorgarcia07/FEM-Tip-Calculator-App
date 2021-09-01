@@ -1,0 +1,44 @@
+@use "../main" as base;
+
+.layout {
+  max-width: 381px;
+}
+
+.header {
+  padding: 3.5em 0 2.2em 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: base.$main-background;
+}
+
+.fieldset-container {
+  border: none;
+  padding: 0;
+}
+
+.radio-container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 48%);
+  justify-content: space-between;
+  padding-top: 0.3em;
+}
+
+.result-container {
+  border-radius: 10px;
+  padding: 3.3em 2em 2em 2em;
+  background-color: base.$default-btn;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 1.5em;
+}

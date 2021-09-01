@@ -1,0 +1,28 @@
+@media screen and (min-width: 690px) {
+  .layout {
+    max-width: 100%;
+  }
+
+  .container {
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 878px;
+  }
+
+  .result-container {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submit-btn {
+    margin-top: auto;
+  }
+
+  .radio-container {
+    grid-template: repeat(2, 1fr) / repeat(3, 32%);
+  }
+}

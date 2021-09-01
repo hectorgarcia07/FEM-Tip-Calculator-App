@@ -71,25 +71,25 @@
             placeholder="0" title="Enter a positive number." pattern="^[1-9]\d*$">
           </div>
         </div>
-        <!-- Result Amount -->
-        <div class="input-container result-container">
-          <div class="total-container">
-            <div class="amount-label">Tip Amount <br>
-              <span class="person-label">/ person</span>
-            </div>
-            <div class="total-label" id="tip-per-person">$0.00</div>
-          </div>
-          <div class="total-container">
-            <div class="amount-label">Total <br>
-              <span class="person-label">/ person</span>
-            </div>
-            <div class="total-label" id="total-per-person">$0.00</div>
-          </div>
-          <!--  -->
-          <button type="reset" id="submit-btn" class="submit-btn submit-active" 
-          title="Please fill out all fields before submiting." disabled>RESET</button>
-        </div>
       </form>
+      <!-- Result Amount -->
+      <div class="result-container tip-form">
+        <div class="total-container">
+          <div class="amount-label">Tip Amount <br>
+            <span class="person-label">/ person</span>
+          </div>
+          <div class="total-label" id="tip-per-person">$0.00</div>
+        </div>
+        <div class="total-container">
+          <div class="amount-label">Total <br>
+            <span class="person-label">/ person</span>
+          </div>
+          <div class="total-label" id="total-per-person">$0.00</div>
+        </div>
+        <!-- Resets input -->
+        <button type="reset" id="submit-btn" class="submit-btn submit-active" 
+        title="Please fill out all fields before submiting." disabled>RESET</button>
+      </div>
     </main>
   </div>
   
