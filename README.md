@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/hectorgarcia07/FEM-Tip-Calculator-App)
+- Live Site URL: [Github Pages](https://hectorgarcia07.github.io/FEM-Tip-Calculator-App/)
 
 ### Built with
 
