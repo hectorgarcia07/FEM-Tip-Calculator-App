@@ -27,10 +27,6 @@
   cursor: pointer;
 }
 
-.layout {
-  max-width: 381px;
-}
-
 .header {
   padding: 3.5em 0 2.2em 0;
   text-align: center;
@@ -86,7 +82,7 @@
   background-color: #26c0ab;
 }
 .submit-active:hover {
-  background-color: #26c0ab;
+  background-color: #c5e4e7;
   color: #00494d;
   cursor: pointer;
 }
@@ -110,7 +106,7 @@ button[id=submit-btn]:disabled:hover {
   color: white;
 }
 .radio-choice:hover {
-  background-color: #26c0ab;
+  background-color: #c5e4e7;
   color: #00494d;
   cursor: pointer;
 }
@@ -206,6 +202,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 32px;
   font-weight: 700;
   align-self: center;
+  word-break: break-word;
 }
 
 @media screen and (min-width: 690px) {

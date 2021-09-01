@@ -1,7 +1,7 @@
 @use "../main" as base;
 
 @mixin hover-btn {
-  background-color: base.$active-btn;
+  background-color: base.$title-background;
   color: base.$default-btn;
   cursor: pointer;
 }
